@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap h3 {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.list-wrap {
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.list-wrap .inner-list {
+  width: 100%;
+  position: relative;
+}
+
+.list-wrap .inner-list:after {
+  content: attr(up);
+  width: 100%;
+  height: 44px;
+  background: pink;
+  display: block;
+  position: absolute;
+  bottom: -44px;
+  left: 0;
+  text-align: center;
+  line-height: 44px;
+}
+
+.list-wrap .inner-list li {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
